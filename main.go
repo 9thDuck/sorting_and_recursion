@@ -31,6 +31,7 @@ import (
 
 func main() {
 	arr := []int{5, 150, 3, 1, 99, 6, 42, 11, 9}
-	sorted := sort.MergeSort(arr)
+	// sorted := sort.MergeSort(arr)
+	sorted := *sort.QuickSort[int](&arr)
 	fmt.Println(sorted)
 }
